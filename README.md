@@ -34,6 +34,7 @@ O Banco Pan está organizando um festival de música no Rio de Janeiro, chamado 
 
 • Cada ingresso possui um ID único, nome do comprador, idade, data de nascimento, CPF, forma de pagamento, ID da Edição, contato (composto por telefone, email e conta no app do banco) e quais shows irá participar.
 
+
 Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 
 1. Cada edição é abrigada em um único local e cada local é abrigado para uma única edição.
@@ -42,6 +43,7 @@ Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 4. Um local pode ter múltiplas equipes ao seu gerenciamento, mas cada equipe está gerenciando um único lugar.
 5. Uma apresentação pode gerar muitos ingressos, e cada ingresso pode ser gerado apenas para várias apresentações.
 6. Uma equipe pode validar inúmeros ingressos e um ingresso pode ser validado somente por uma equipe.
+   
 
 É tanta coisa, tanta informação né?! Mas relaxe, agora vamos começar a organizar tudo isso! =)
 
