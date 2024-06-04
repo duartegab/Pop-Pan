@@ -922,7 +922,7 @@ O resultado deverá aparecer da seguinte forma:
 
 
 
-Nessa segunda consulta, o objetivo é recuperar os temas das edições e os nomes dos locais onde essas edições ocorreram.:
+Nessa segunda consulta, o objetivo é recuperar os temas das edições e os nomes dos locais onde essas edições ocorreram:
 ```sql
 SELECT e.Tema, l.Nome
 FROM Edicoes e
@@ -934,7 +934,7 @@ O resultado deverá aparecer da seguinte forma:
 
 
 
-Nessa terceira consulta, o objetivo é recuperar os nomes das apresentações e os nomes dos artistas que as realizam.:
+Nessa terceira consulta, o objetivo é recuperar os nomes das apresentações e os nomes dos artistas que as realizam:
 ```sql
 SELECT p.Nome_Apresentacao, a.Nome
 FROM Apresentacoes p
@@ -946,6 +946,52 @@ O resultado deverá aparecer da seguinte forma:
 ![3.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%202.4.png)
 ![3.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%203.4.png)
 ![3.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%204.4.png)
+
+
+
+Nessa quarta consulta, o objetivo é Objetivo: Recuperar os nomes e os emails dos compradores dos ingressos:
+```sql
+SELECT i.Nome, i.Email_Comprador
+FROM Ingressos i;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%201.6.png)
+![4.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%202.6.png)
+![4.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%203.6.png)
+![4.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%204.6.png)
+![4.5](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%205.5.png)
+![4.6](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%206.6.png)
+
+
+
+Nessa quinta consulta, o objetivo é recuperar os nomes das equipes e os nomes das tarefas que essas equipes realizam:
+```sql
+SELECT eq.Nome, te.Nome_Tarefas_Equipe
+FROM Equipes eq
+JOIN Tarefas_Equipe te ON eq.ID_Equipe = te.ID_Equipe;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![5](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%205%201.4.png)
+![5.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%205%202.4.png)
+![5.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%205%203.4.png)
+![5.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%205%204.4.png)
+
+
+
+Nessa sexta consulta, o objetivo é Objetivo: Recuperar as descrições das atividades extras e os nomes das apresentações associadas a essas atividades:
+```sql
+SELECT ae.Descricao_AtividadesExtras, p.Nome_Apresentacao
+FROM Atividades_Extras ae
+JOIN Apresentacoes p ON ae.ID_Apresentacao = p.ID_Apresentacao;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![6](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%201.4.png)
+![6.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%202.4.png)
+![6.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%203.4.png)
+![6.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%204.4.png)
 ## 📌 Versão
 
 Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
