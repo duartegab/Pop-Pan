@@ -827,9 +827,9 @@ SELECT * FROM Atividades_Extras;
 ```
 O resultado deve aparecer da seguinte forma:
 ![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%201.4.png)
-![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud&201%202.4.png)
-![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud_1_3.4.png)
-![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud_1_4.4.png)
+![1.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud&201%202.4.png)
+![1.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%203.4.png)
+![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%204.4.png)
 
 
 Mencione as ferramentas que você usou para criar seu projeto
