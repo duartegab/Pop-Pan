@@ -914,6 +914,7 @@ FROM Artistas a
 JOIN RedesSociais_Artistas rs ON a.ID_Artista = rs.ID_Artista;
 ```
 O resultado deverá aparecer da seguinte forma:
+
 ![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%201.4.png)
 ![1.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%202.4.png)
 ![1.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%203.4.png)
