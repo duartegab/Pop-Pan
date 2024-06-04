@@ -1065,7 +1065,7 @@ O resultado deverá aparecer da seguinte forma:
 
 ## 📄 Licença
 
-Este projeto está sob a licença [Gabriel Duarte](https://github.com/duartegab) - veja o arquivo [LICENSE.md](https://github.com/duartegab/kithtml/licenca) para detalhes.
+Este projeto está sob a licença [Gabriel Duarte](https://github.com/duartegab) - veja o arquivo [LICENSE.md](https://github.com/duartegab/Pop-Pan/licenca) para detalhes.
 
 
 ## 🖇️ Recursos Utilizados
@@ -1085,7 +1085,7 @@ Clicar nos links abaixo te darão acesso ao meus códigos-fonte e imagens utiliz
 
 ## 🎁 Gratidão
 
-* Desde já conto o apoio de vocês e peço que me sigam, para acompanharem junto comigo meu primeiro Projeto Integrador [Dream Builder](https://github.com/duartegab/Dream-Builder) com a [Caroline Avelar](https://github.com/avelarcaroline), que terá relação com minhas disciplinas-chave do meu 1º Semestre (Engenharia de Software 1, Desenvolvimento Web 1 e Design Digital)! 📢;
+* Desde já conto o apoio de vocês e peço que me sigam, para acompanharem junto comigo meu primeiro Projeto Integrador [Dream Builder](https://github.com/duartegab/Dream-Builder) com a [Caroline Avelar]((https://github.com/CarolineAvelar)), que terá relação com minhas disciplinas-chave do meu 1º Semestre (Engenharia de Software 1, Desenvolvimento Web 1 e Design Digital)! 📢;
 * Agradeço ao meu professor Márcio Funes, que me instruiu e forneceu todo o material necessário para eu conseguir levantar esse projeto do zero. E a minha família, amigos, que me motivam a cada dia mais para entrar no Ramo de Tecnologia da Informação, com o objetivo de construir uma carreira estável, sendo um profissional íntegro e inovador. 🫂;
 
 ---
