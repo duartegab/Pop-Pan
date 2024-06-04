@@ -79,7 +79,7 @@ Agora sim estamos prontos para criar Tabelas (com chaves e campos) em um Sistema
 
 Vamos práticar?!
 
-# Antes de tudo vale lembrar que esses servidores onlines não te permitem a criação de um database. Então vamos direto as tabelas:
+Antes de tudo, vale lembrar que esses servidores onlines não te permitem a criação de um database. Então vamos direto as tabelas:
 
 Seguindo nosso Modelo Lógico, vamos criar a tabela Edições:
 
