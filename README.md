@@ -832,7 +832,7 @@ O resultado deve aparecer da seguinte forma:
 ![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%204.4.png)
 
 Continuando no R - read, vamos selecionar mais alguns dados. Como Edicoes:
-![2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%202.png)
+![2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%202.png)
 
 E Artistas:
 ![3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%201.3.png)
