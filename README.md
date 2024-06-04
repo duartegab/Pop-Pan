@@ -821,7 +821,7 @@ VALUES
 (39, 6, 39, 'Comentando comentários com Kefera - 2024-06-01 23:00:00');
 ```
 
-Agora, vamos usar o R -read, para selecionar essa tabela, pra ver se deu tudo certo:
+Agora, vamos usar o R - read, para selecionar essa tabela, pra ver se deu tudo certo:
 ```sql
 SELECT * FROM Atividades_Extras;
 ```
@@ -831,6 +831,13 @@ O resultado deve aparecer da seguinte forma:
 ![1.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%203.4.png)
 ![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%204.4.png)
 
+Continuando no R - read, vamos selecionar mais alguns dados. Como Edicoes:
+![2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%202.png)
+
+E Artistas:
+![3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%201.3.png)
+![3.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%202.3.png)
+![3.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%203.3.png)
 
 Mencione as ferramentas que você usou para criar seu projeto
 
