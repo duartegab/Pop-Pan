@@ -952,7 +952,7 @@ O resultado deverá aparecer da seguinte forma:
 
 
 
-Nessa quarta consulta, o objetivo é Objetivo: Recuperar os nomes e os emails dos compradores dos ingressos:
+Nessa quarta consulta, o objetivo é recuperar os nomes e os emails dos compradores dos ingressos:
 ```sql
 SELECT i.Nome, i.Email_Comprador
 FROM Ingressos i;
@@ -1050,7 +1050,7 @@ O resultado deverá aparecer da seguinte forma:
 
 
 
-Nessa décima consulta, o objetivo é recuperar os temas das edições e os nomes dos artistas que participam dessas edições:
+Por fim, na décima consulta, o objetivo é recuperar os temas das edições e os nomes dos artistas que participam dessas edições:
 ```sql
 SELECT e.Tema, a.Nome
 FROM Edicoes e
