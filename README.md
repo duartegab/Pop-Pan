@@ -980,7 +980,7 @@ O resultado deverá aparecer da seguinte forma:
 
 
 
-Nessa sexta consulta, o objetivo é Objetivo: Recuperar as descrições das atividades extras e os nomes das apresentações associadas a essas atividades:
+Nessa sexta consulta, o objetivo é recuperar as descrições das atividades extras e os nomes das apresentações associadas a essas atividades:
 ```sql
 SELECT ae.Descricao_AtividadesExtras, p.Nome_Apresentacao
 FROM Atividades_Extras ae
@@ -992,9 +992,76 @@ O resultado deverá aparecer da seguinte forma:
 ![6.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%202.4.png)
 ![6.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%203.4.png)
 ![6.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%206%204.4.png)
-## 📌 Versão
 
-Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
+
+
+Nessa sétima consulta, o objetivo é recuperar os nomes dos patrocinadores e os temas das edições que eles patrocinam:
+```sql
+SELECT p.Nome_Patrocinador, e.Tema
+FROM Patrocinadores p
+JOIN Edicoes e ON p.ID_Edicoes = e.ID_Edicao;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![7](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%207%201.3.png)
+![7.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%207%202.3.png)
+![7.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%207%203.3.png)
+
+
+
+Nessa oitava consulta, o objetivo é recuperar os nomes das tarefas das equipes e os nomes das equipes:
+```sql
+SELECT te.Nome_Tarefas_Equipe, eq.Nome
+FROM Tarefas_Equipe te
+JOIN Equipes eq ON te.ID_Equipe = eq.ID_Equipe;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![8](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%208%201.3.png)
+![8.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%208%202.3.png)
+![8.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%208%203.3.png)
+
+
+
+Nessa nona consulta, o objetivo é recuperar os nomes dos ingressos e os nomes dos artistas das apresentações para as quais esses ingressos são válidos:
+```sql
+SELECT i.Nome, p.Nome_Artista
+FROM Ingressos_Apresentações ia
+JOIN Ingressos i ON ia.ID_Ingresso = i.ID_Ingresso
+JOIN Apresentacoes p ON ia.ID_Apresentacao = p.ID_Apresentacao;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![9](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%201.12.png)
+![9.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%202.12.png)
+![9.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%203.12.png)
+![9.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%204.12.png)
+![9.5](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%205.12.png)
+![9.6](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%206.12.png)
+![9.7](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%207.12.png)
+![9.8](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%208.12.png)
+![9.9](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%209.12.png)
+![9.10](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%2010.12.png)
+![9.11](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%2011.12.png)
+![9.12](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%209%2012.12.png)
+
+
+
+Nessa décima consulta, o objetivo é recuperar os temas das edições e os nomes dos artistas que participam dessas edições:
+```sql
+SELECT e.Tema, a.Nome
+FROM Edicoes e
+JOIN Edicoes_Artistas ea ON e.ID_Edicao = ea.ID_Edicao
+JOIN Artistas a ON ea.ID_Artista = a.ID_Artista;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![10](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%201.4.png)
+![10.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%202.4.png)
+![10.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%203.4.png)
+![10.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%204.4.png)
+
+
 
 ## ✒️ Autores
 
@@ -1018,4 +1085,4 @@ Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](h
 
 
 ---
-⌨️ com ❤️ por [Armstrong Lohãns](https://gist.github.com/lohhans) 😊
+⌨️ com ❤️ por [Gabriel Duarte](https://gist.github.com/duartegab) 😊
