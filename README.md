@@ -943,8 +943,11 @@ JOIN Artistas a ON p.ID_Artista = a.ID_Artista;
 O resultado deverá aparecer da seguinte forma:
 
 ![3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%201.4.png)
+
 ![3.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%202.4.png)
+
 ![3.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%203.4.png)
+
 ![3.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%204.4.png)
 
 
