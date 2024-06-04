@@ -51,7 +51,7 @@ Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 
 Agora é a hora que pegamos todas essas informações, e convertemos em entidades, atributos e relacionamentos. Lembre-se das diferenças dos atributos (simples, composto, multivalorado, derivado e identificador) bem como os relacionamentos entre entidades (1 para 1, 1 para N e N para N), essas informações serão importantes mais tarde! 😉
 
-![Style](https://github.com/duartegab/kithtml/blob/main/quatro.png)
+![Style](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/modeloconceitual.png)
 
 Ah, outro detalhe importante é saber que as Entidades são representadas por retângulos, os Atributos por elipses, os Relacionamentos por Losangos (sendo todos interligados por linha, tá bom?!)
 ### 🔧 Instalação
