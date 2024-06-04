@@ -800,6 +800,7 @@ VALUES
 
 
 ## 🛠️ Parte 6 - Dando início as Operações CRUD:
+
 Você sabia que, mesmo após inserir os dados, ainda podemos personalizar como quisermos? Para isso que existe as Operações CRUD, com ela, podemos C - create (criar ou inserir), R - read (ler ou selecionar), U - update (atualizar) D - delete (deletar), quais dados quiser em seu Banco de Dados. Vamos conhecer essas operações melhor?
 
 
@@ -902,9 +903,22 @@ O resultado final deve aparecer da seguinte forma:
 
 
 
-## 🖇️ Colaborando
+## 🖇️ Parte 7 - Gerando os Relatórios de Consulta:
 
-Por favor, leia o [COLABORACAO.md](https://gist.github.com/usuario/linkParaInfoSobreContribuicoes) para obter detalhes sobre o nosso código de conduta e o processo para nos enviar pedidos de solicitação.
+Por fim, mas não menos importante, vamos gerar os Relatórios de Consulta. Eles são fundamentais para ver a funcionalidade do Banco como um todo, assim como a relação entre suas tabelas e campos. Veja só:
+
+Nessa primeira consulta, o objetivo é recuperar os nomes dos artistas junto com os nomes das suas redes sociais:
+```sql
+SELECT a.Nome, rs.Nome_RedeSocial
+FROM Artistas a
+JOIN RedesSociais_Artistas rs ON a.ID_Artista = rs.ID_Artista;
+```
+O resultado deverá aparecer da seguinte forma:
+![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%201.4.png)
+![1.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%202.4.png)
+![1.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%203.4.png)
+![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%204.4.png)
+
 
 ## 📌 Versão
 
