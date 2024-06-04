@@ -49,7 +49,7 @@ Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 
 
 
-### 📋 Parte 2 - Criando nosso Modelagem Conceitual de Dados:
+## 📋 Parte 2 - Criando nosso Modelagem Conceitual de Dados:
 
 Agora é a hora que pegamos todas essas informações, e convertemos num diagrama, com entidades, atributos e relacionamentos. Lembre-se das diferenças dos atributos (simples, composto, multivalorado, derivado e identificador) bem como os relacionamentos entre entidades (1 para 1, 1 para N e N para N), essas informações serão importantes mais tarde! 😉
 
@@ -61,7 +61,7 @@ Ah, outro detalhe importante é saber que as Entidades são representadas por re
 
 
 
-### 🔧 Parte 3 - Transicionando para o Modelo Lógico:
+## 🔧 Parte 3 - Transicionando para o Modelo Lógico:
 
 Bom, mesmo com o Diagrama, ainda não chegamos perto o suficiente da modelagem física. Para isso acontecer, as entidades se tornarão tabelas (com chaves primárias e estrangeiras), e os atributos se tornarão campos de valores para receber os dados (sendo int, varchar ou etc). Dessa forma, Já nos organizamos melhor para em breve migrarmos para a Modelagem Física.
 
@@ -73,7 +73,7 @@ Não se esqueça também dos relacionamentos (alguns virarão tabelas intermedi�
 
 
 
-### ⚙️ Parte 4 - Começando com a Modelagem Física...
+## ⚙️ Parte 4 - Começando com a Modelagem Física...
 
 Agora sim estamos prontos para criar Tabelas (com chaves e campos) em um Sistema de Banco de Dados real. Utilizei o (https://sqliteonline.com/), um servidor online que atende a várias linguagens de dados, ideal para começar a entender esses conceitos, antes de se aprofundar de fato.
 
