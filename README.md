@@ -81,7 +81,7 @@ Vamos práticar?!
 
 Antes de tudo, vale lembrar que esses servidores onlines não te permitem a criação de um database. Então vamos direto as tabelas:
 
-Seguindo nosso Modelo Lógico, vamos criar a tabela Edições:
+Seguindo nosso Modelo Lógico, vamos criar a tabela Edicoes:
 
 ```sql
 CREATE TABLE Edicoes (
@@ -95,15 +95,178 @@ CREATE TABLE Edicoes (
     Email_Criador VARCHAR(50) NOT NULL
 );
 ```
-Ah, lembre-se também sempre de usar o 'Run' ou outro comando para executar o código, se não sua modelagem não irá funcionar!
+Usamos Not Null como uma restição, para que o usuário não insira nenhum valor nulo. Ah, lembre-se também sempre de usar o 'Run' ou outro comando para executar o código, se não sua modelagem não irá funcionar!
 
-### ⌨️ E testes de estilo de codificação
+Agora, vamos criar a tabela de Patrocinadores:
 
-Explique que eles verificam esses testes e porquê.
-
+```sql
+CREATE TABLE Patrocinadores (
+    ID_Patrocinador INT PRIMARY KEY,
+    ID_Edicao INT,
+    Nome_Patrocinador VARCHAR(200) NOT NULL,
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao)
+);
 ```
-Dar exemplos
+Percebeu que, na Modelagem Física, a chave estrangeira já mostra na última linha da onde que ela veio. Que tudo né?!
+
+Criando a tabela Edicoes_Artistas:
+
+```sql
+CREATE TABLE Edicoes_Artistas (
+    ID_Edicao INT,
+    ID_Artista INT,
+    PRIMARY KEY (ID_Edicao, ID_Artista),
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao),
+    FOREIGN KEY (ID_Artista) REFERENCES Artistas(ID_Artista)
+);
 ```
+Criando a tabela Artistas:
+
+```sql
+CREATE TABLE Artistas (
+    ID_Artista INT PRIMARY KEY,
+    ID_Edicao INT,
+    Nome VARCHAR(200) NOT NULL,
+    Descricao VARCHAR(300) NOT NULL,
+    Data_de_Nascimento DATE NOT NULL,
+    Idade INT NOT NULL,
+    Nome_Local VARCHAR(100) NOT NULL,
+    Data_Hora_Apresentacao DATETIME NOT NULL,
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao)
+);
+```
+
+Agora, vamos criar a tabela RedesSociais_Artistas:
+```sql
+CREATE TABLE RedesSociais_Artistas (
+    ID_RedesSociais_Artista INT PRIMARY KEY,
+    ID_Artista INT,
+    Nome_RedeSocial VARCHAR(100) NOT NULL,
+    FOREIGN KEY (ID_Artista) REFERENCES Artistas(ID_Artista)
+);
+```
+
+Criando a tabela Local:
+```sql
+CREATE TABLE Local (
+    ID_Local INT PRIMARY KEY,
+    ID_Edicao INT,
+    Nome VARCHAR(200) NOT NULL,
+    Qtd_de_Pessoas INT NOT NULL,
+    Rua_Local VARCHAR(200) NOT NULL,
+    Nº_Local VARCHAR(7) NOT NULL,
+    Bairro_Local VARCHAR(100) NOT NULL,
+    CEP VARCHAR(20) NOT NULL,
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao)
+);
+```
+
+Criando a tabela Equipes:
+```sql
+CREATE TABLE Equipes (
+    ID_Equipe INT PRIMARY KEY,
+    ID_Local INT,
+    ID_Edicao INT,
+    Nome VARCHAR(200) NOT NULL,
+    Qtd_de_Membros INT NOT NULL,
+    Descricao_Localizacao VARCHAR(300) NOT NULL,
+    Latitude_Local FLOAT(10, 6),
+    Longitude_Local FLOAT(10, 6),
+    FOREIGN KEY (ID_Local) REFERENCES Local(ID_Local),
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao)
+);
+```
+
+Criando a tabela Equipes_Local:
+```sql
+CREATE TABLE Equipes_Local (
+    ID_Equipes_Local INT PRIMARY KEY,
+    ID_Local INT,
+    ID_Equipe INT,
+    Nome_Equipes_Local VARCHAR(100) NOT NULL,
+    FOREIGN KEY (ID_Local) REFERENCES Local(ID_Local),
+    FOREIGN KEY (ID_Equipe) REFERENCES Equipes(ID_Equipe)
+);
+```
+
+E também a tabela Tarefas_Equipe:
+```sql
+CREATE TABLE Tarefas_Equipe (
+    ID_Tarefas_Equipe INT PRIMARY KEY,
+    ID_Equipe INT,
+    Nome_Tarefas_Equipe VARCHAR(150) NOT NULL,
+    FOREIGN KEY (ID_Equipe) REFERENCES Equipes(ID_Equipe)
+);
+```
+
+Agora, iremos criar a tabela Ingressos:
+```sql
+CREATE TABLE Ingressos (
+    ID_Ingresso INT PRIMARY KEY,
+    ID_Edicao INT,
+    ID_Equipe INT,
+    Nome VARCHAR(200) NOT NULL,
+    CPF VARCHAR(20) NOT NULL,
+    Data_de_Nascimento DATE NOT NULL,
+    Idade INT NOT NULL,
+    Forma_de_Pagto VARCHAR(50) NOT NULL,
+    Email_Comprador VARCHAR(100) NOT NULL,
+    Telefone_Comprador VARCHAR(50) NOT NULL,
+    ContaBanco_Comprador VARCHAR(50) NOT NULL,
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao),
+    FOREIGN KEY (ID_Equipe) REFERENCES Equipes(ID_Equipe)
+);
+```
+
+Iremos criar também a tabela QtdShows_Ingressos:
+```sql
+CREATE TABLE QtdShows_Ingressos (
+    ID_QtdShows_Ingressos INT PRIMARY KEY,
+    ID_Ingresso INT,
+    ID_Apresentacao INT,
+    QtdShows_Ingressos INT NOT NULL,
+    FOREIGN KEY (ID_Ingresso) REFERENCES Ingressos(ID_Ingresso),
+    FOREIGN KEY (ID_Apresentacao) REFERENCES Apresentacoes(ID_Apresentacao)
+);
+```
+A tabela Apresentacoes também sera criada:
+```sql
+CREATE TABLE Apresentacoes (
+    ID_Apresentacao INT PRIMARY KEY,
+    ID_Artista INT,
+    ID_Edicao INT,
+    Nome_Artista VARCHAR(200) NOT NULL,
+    Qtd_Edicoes_Apresentadas INT NOT NULL,
+    Nome_Local VARCHAR(200) NOT NULL,
+    Data_Hora_Apresentacao DATETIME NOT NULL,
+    FOREIGN KEY (ID_Artista) REFERENCES Artistas(ID_Artista),
+    FOREIGN KEY (ID_Edicao) REFERENCES Edicoes(ID_Edicao)
+);
+```
+
+Junto com a tabela: Ingressos_Apresentacoes:
+```sql
+CREATE TABLE Ingressos_Apresentacoes (
+    ID_Ingresso INT,
+    ID_Apresentacao INT,
+    PRIMARY KEY (ID_Ingresso, ID_Apresentacao),
+    FOREIGN KEY (ID_Ingresso) REFERENCES Ingressos(ID_Ingresso),
+    FOREIGN KEY (ID_Apresentacao) REFERENCES Apresentações(ID_Apresentacao)
+);
+```
+
+Por fim, iremos criar a tabela Atividades_Extras:
+```sql
+CREATE TABLE Atividades_Extras (
+    ID_AtividadesExtras INT PRIMARY KEY,
+    ID_Local INT,
+    ID_Apresentacao INT,
+    Descricao_AtividadesExtras VARCHAR(100) NOT NULL,
+    FOREIGN KEY (ID_Local) REFERENCES Local(ID_Local),
+    FOREIGN KEY (ID_Apresentacao) REFERENCES Apresentacoes(ID_Apresentacao)
+);
+```
+
 
 ## 📦 Implantação
 
