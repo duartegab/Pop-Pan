@@ -1063,26 +1063,30 @@ O resultado deverá aparecer da seguinte forma:
 
 
 
-## ✒️ Autores
-
-Mencione todos aqueles que ajudaram a levantar o projeto desde o seu início
-
-* **Um desenvolvedor** - *Trabalho Inicial* - [umdesenvolvedor](https://github.com/linkParaPerfil)
-* **Fulano De Tal** - *Documentação* - [fulanodetal](https://github.com/linkParaPerfil)
-
-Você também pode ver a lista de todos os [colaboradores](https://github.com/usuario/projeto/colaboradores) que participaram deste projeto.
-
 ## 📄 Licença
 
-Este projeto está sob a licença (sua licença) - veja o arquivo [LICENSE.md](https://github.com/usuario/projeto/licenca) para detalhes.
+Este projeto está sob a licença [Gabriel Duarte](https://github.com/duartegab) - veja o arquivo [LICENSE.md](https://github.com/duartegab/kithtml/licenca) para detalhes.
 
-## 🎁 Expressões de gratidão
 
-* Conte a outras pessoas sobre este projeto 📢;
-* Convide alguém da equipe para uma cerveja 🍺;
-* Um agradecimento publicamente 🫂;
-* etc.
+## 🖇️ Recursos Utilizados
 
+Clicar nos links abaixo te darão acesso ao meus códigos-fonte e imagens utilizadas:
+
+* *Codificação* - Código-fonte MY SQL- (https://github.com/duartegab/Pop-Pan/blob/main/prova.sql)
+* *Galeria* - Prints dos Códigos - (https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan)
+
+
+
+## ✒️ Autores
+
+* **Gabriel Duarte** - *Trabalho Inicial/Final* - [Gabriel Duarte](https://github.com/duartegab)
+* **Gabriel Duarte** - *Documentação* - [Gabriel Duarte](https://github.com/duartegab)
+
+
+## 🎁 Gratidão
+
+* Desde já conto o apoio de vocês e peço que me sigam, para acompanharem junto comigo meu primeiro Projeto Integrador [Dream Builder](https://github.com/duartegab/Dream-Builder) com a [Caroline Avelar](https://github.com/avelarcaroline), que terá relação com minhas disciplinas-chave do meu 1º Semestre (Engenharia de Software 1, Desenvolvimento Web 1 e Design Digital)! 📢;
+* Agradeço ao meu professor Márcio Funes, que me instruiu e forneceu todo o material necessário para eu conseguir levantar esse projeto do zero. E a minha família, amigos, que me motivam a cada dia mais para entrar no Ramo de Tecnologia da Informação, com o objetivo de construir uma carreira estável, sendo um profissional íntegro e inovador. 🫂;
 
 ---
-⌨️ com ❤️ por [Gabriel Duarte](https://gist.github.com/duartegab) 😊
+⌨️ com ❤️ por [Gabriel Duarte](https://github.com/duartegab) 😊
