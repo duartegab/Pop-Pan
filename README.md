@@ -802,6 +802,7 @@ VALUES
 ## 🛠️ Parte 6 - Dando início as Operações CRUD:
 Você sabia que, mesmo após inserir os dados, ainda podemos personalizar como quisermos? Para isso que existe as Operações CRUD, com ela, podemos C - create (criar ou inserir), R - read (ler ou selecionar), U - update (atualizar) D - delete (deletar), quais dados quiser em seu Banco de Dados. Vamos conhecer essas operações melhor?
 
+
 Para usar o comando C - create, vamos inserir mais alguns dados em Atividades_extras:
 ```sql
 INSERT INTO Atividades_Extras (ID_AtividadesExtras, ID_Local, ID_Apresentacao, Descricao_AtividadesExtras)
@@ -821,6 +822,7 @@ VALUES
 (39, 6, 39, 'Comentando comentários com Kefera - 2024-06-01 23:00:00');
 ```
 
+
 Agora, vamos usar o R - read, para selecionar essa tabela, pra ver se deu tudo certo:
 ```sql
 SELECT * FROM Atividades_Extras;
@@ -832,18 +834,72 @@ O resultado deve aparecer da seguinte forma:
 ![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%201%204.4.png)
 
 Continuando no R - read, vamos selecionar mais alguns dados. Como Edicoes:
+```sql
+SELECT * FROM Edicoes;
+```
+O resultado deve aparecer da seguinte forma:
 ![2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%202.png)
 
 E Artistas:
+```sql
+SELECT * FROM Artistas;
+```
+O resultado deve aparecer da seguinte forma:
 ![3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%201.3.png)
 ![3.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%202.3.png)
 ![3.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%203%203.3.png)
 
-Mencione as ferramentas que você usou para criar seu projeto
 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - O framework web usado
-* [Maven](https://maven.apache.org/) - Gerente de Dependência
-* [ROME](https://rometools.github.io/rome/) - Usada para gerar RSS
+Agora, com o comando U - update. Vamos atualizar alguns dados.
+O tema da Edição de 2024 mudou, vamos alterar isso:
+```sql
+UPDATE Edicoes
+SET Tema = 'Pop Pan 2024 - Rehab'
+WHERE ID_Edicao = 6;
+```
+Vamos dar o Select para ver se deu certo:
+```sql
+SELECT * FROM Edicoes;
+```
+O resultado deve aparecer da seguinte forma:
+![4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%204.png)
+
+
+Suponhamos que o comprador do Ingresso 50 (Jorge) comprou o ingresso para a sua irmã Rita.
+
+Dessa forma, é necessário somente mudar o nome da compra:
+```sql
+UPDATE Ingressos
+SET Nome = 'Rita Garcia'
+WHERE ID_Ingresso = 50;
+```
+Vamos dar o Select para ver se deu certo:
+```sql
+SELECT * FROM Ingressos;
+```
+O resultado deve aparecer da seguinte forma:
+![5](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%205.png)
+
+
+Por fim, com o comando D - delete, vamos deletar algumas atividades que foram canceladas:
+```sql
+DELETE FROM Atividades_Extras
+WHERE ID_AtividadesExtras = 38;
+```
+Essa também:
+```sql
+DELETE FROM Atividades_Extras
+WHERE ID_AtividadesExtras = 39;
+```
+Vamos dar o Select para ver se deu certo:
+```sql
+SELECT * FROM Atividades_Extras;
+```
+O resultado final deve aparecer da seguinte forma:
+![6](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%206.png)
+
+
+
 
 ## 🖇️ Colaborando
 
