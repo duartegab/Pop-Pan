@@ -73,16 +73,27 @@ Não se esqueça também dos relacionamentos (alguns virarão tabelas intermedi�
 
 
 
-## ⚙️ Executando os testes
+### ⚙️ Começando com a Modelagem Física...
 
-Explicar como executar os testes automatizados para este sistema.
+Agora sim estamos prontos para criar Tabelas (com chaves e campos) em um Sistema de Banco de Dados real. Utilizei o (https://sqliteonline.com/), um servidor online que atende a várias linguagens de dados, ideal para começar a entender esses conceitos, antes de se aprofundar de fato.
 
-### 🔩 Analise os testes de ponta a ponta
+Vamos práticar?!
 
-Explique que eles verificam esses testes e porquê.
+# Antes de tudo vale lembrar que esses servidores onlines não te permitem a criação de um database. Então vamos direto as tabelas:
 
-```
-Dar exemplos
+Seguindo nosso Modelo Lógico, vamos criar a tabela Edições:
+
+```sql
+CREATE TABLE Edicoes (
+    ID_Edicao INT PRIMARY KEY,
+    Tema VARCHAR(200) NOT NULL,
+    DataHora_Inicio DATETIME NOT NULL,
+    DataHora_Termino DATETIME NOT NULL,
+    Duracao TIME NOT NULL,
+    Nome_Criador VARCHAR(100) NOT NULL,
+    Telefone_Criador VARCHAR(100) NOT NULL,
+    Email_Criador VARCHAR(50) NOT NULL
+);
 ```
 
 ### ⌨️ E testes de estilo de codificação
