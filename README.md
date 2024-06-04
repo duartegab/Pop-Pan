@@ -5,7 +5,7 @@ Nesse projeto, te mostro como fazer uma modelagem de dados para um festival de m
 ## 🚀 Parte 1 - Criando nosso cenário...
 
 Para começarmos uma Modelagem de Banco de Dados, o primeiro passo é fazer o cenário, para assim entender quais serão as Entidades (futuras tabelas), Atributos (futuros campos) e os Relacionamentos. Como já disse meu Banco de Dados 'Pop Pan', organizará toda a estrutura de um festival de música, se liga nele:
-
+```
 # Festival de Música "Pop Pan"
 
 O Banco Pan está organizando um festival de música no Rio de Janeiro, chamado "Pop Pan". Os ingressos são vendidos online, no app do Banco e são validados na entrada do show pela equipe de segurança digital, para evitar fraudes. O sistema de banco de dados para o festival gerencia todas as edições do evento, incluindo artistas, agenda, locais, equipe, patrocinadores e setlists. A seguir, alguns detalhes e requisitos do sistema:
@@ -43,7 +43,7 @@ Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 4. Um local pode ter múltiplas equipes ao seu gerenciamento, mas cada equipe está gerenciando um único lugar.
 5. Uma apresentação pode gerar muitos ingressos, e cada ingresso pode ser gerado apenas para várias apresentações.
 6. Uma equipe pode validar inúmeros ingressos e um ingresso pode ser validado somente por uma equipe.
-   
+   ```
 
 É tanta coisa, tanta informação né?! Mas relaxe, agora vamos começar a organizar tudo isso! =)
 
