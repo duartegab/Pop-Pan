@@ -1059,7 +1059,7 @@ O resultado deverá aparecer da seguinte forma:
 ![10](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%201.4.png)
 ![10.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%202.4.png)
 ![10.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%203.4.png)
-![10.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%204.4.png)
+![10.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%2010%204.5.png)
 
 
 
