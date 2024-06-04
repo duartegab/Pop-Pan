@@ -95,7 +95,7 @@ CREATE TABLE Edicoes (
     Email_Criador VARCHAR(50) NOT NULL
 );
 ```
-Usamos Not Null como uma restição, para que o usuário não insira nenhum valor nulo. Ah, lembre-se também sempre de usar o 'Run' ou outro comando para executar o código, se não sua modelagem não irá funcionar!
+Usamos Not Null como uma restrição, para que o usuário não insira nenhum valor nulo. Ah, lembre-se também sempre de usar o 'Run' ou outro comando para executar o código, se não sua modelagem não irá funcionar!
 
 Agora, vamos criar a tabela de Patrocinadores:
 
