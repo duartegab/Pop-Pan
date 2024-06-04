@@ -51,26 +51,24 @@ Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 
 Agora é a hora que pegamos todas essas informações, e convertemos num diagrama, com entidades, atributos e relacionamentos. Lembre-se das diferenças dos atributos (simples, composto, multivalorado, derivado e identificador) bem como os relacionamentos entre entidades (1 para 1, 1 para N e N para N), essas informações serão importantes mais tarde! 😉
 
+Se liga no exemplo:
+
 ![DER](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/modeloconceitual.png)
 
 Ah, outro detalhe importante é saber que as Entidades são representadas por retângulos, os Atributos por elipses, os Relacionamentos por Losangos (sendo todos interligados por linha, tá bom?!)
-### 🔧 Instalação
 
-Uma série de exemplos passo-a-passo que informam o que você deve executar para ter um ambiente de desenvolvimento em execução.
 
-Diga como essa etapa será:
+### 🔧 Parte 3 - Transicionando para o Modelo Lógico:
 
-```
-Dar exemplos
-```
+Bom, mesmo com o Diagrama, ainda não chegamos perto o suficiente da modelagem física. Para isso acontecer, as entidades se tornarão tabelas (com chaves primárias e estrangeiras), e os atributos se tornarão campos de valores para receber os dados (sendo int, varchar ou etc). Dessa forma, Já nos organizamos melhor para em breve migrarmos para a Modelagem Física.
 
-E repita:
+Será como o exemplo abaixo:
 
-```
-Até finalizar
-```
+![DER](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/modelologico.png)
 
-Termine com um exemplo de como obter dados do sistema ou como usá-los para uma pequena demonstração.
+Não se esqueça também dos relacionamentos (alguns virarão tabelas intermediárias, outros serão interligados por chaves estrangeiras, caso tenha alguma dúvida, dê uma aprofundada na Modelagem Lógica de Dados)!
+
+
 
 ## ⚙️ Executando os testes
 
