@@ -918,7 +918,7 @@ O resultado deverá aparecer da seguinte forma:
 ![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%201.4.png)
 ![1.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%202.4.png)
 ![1.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%203.4.png)
-![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%204.0.png)
+![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%204.4.png)
 
 
 
