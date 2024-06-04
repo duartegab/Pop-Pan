@@ -896,6 +896,7 @@ Vamos dar o Select para ver se deu certo:
 SELECT * FROM Atividades_Extras;
 ```
 O resultado final deve aparecer da seguinte forma:
+
 ![6](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud%206.png)
 
 
