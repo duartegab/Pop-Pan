@@ -921,6 +921,31 @@ O resultado deverá aparecer da seguinte forma:
 ![1.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%201%204.4.png)
 
 
+
+Nessa segunda consulta, o objetivo é recuperar os temas das edições e os nomes dos locais onde essas edições ocorreram.:
+```sql
+SELECT e.Tema, l.Nome
+FROM Edicoes e
+JOIN Local l ON e.ID_Edicao = l.ID_Edicao;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%202.png)
+
+
+
+Nessa terceira consulta, o objetivo é recuperar os nomes das apresentações e os nomes dos artistas que as realizam.:
+```sql
+SELECT p.Nome_Apresentacao, a.Nome
+FROM Apresentacoes p
+JOIN Artistas a ON p.ID_Artista = a.ID_Artista;
+```
+O resultado deverá aparecer da seguinte forma:
+
+![3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%201.4.png)
+![3.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%202.4.png)
+![3.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%203.4.png)
+![3.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%203%204.4.png)
 ## 📌 Versão
 
 Nós usamos [SemVer](http://semver.org/) para controle de versão. Para as versões disponíveis, observe as [tags neste repositório](https://github.com/suas/tags/do/projeto). 
