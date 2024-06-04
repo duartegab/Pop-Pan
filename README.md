@@ -95,6 +95,7 @@ CREATE TABLE Edicoes (
     Email_Criador VARCHAR(50) NOT NULL
 );
 ```
+Ah, lembre-se também sempre de usar o 'Run' ou outro comando para executar o código, se não sua modelagem não irá funcionar!
 
 ### ⌨️ E testes de estilo de codificação
 
