@@ -73,7 +73,7 @@ Não se esqueça também dos relacionamentos (alguns virarão tabelas intermedi�
 
 
 
-### ⚙️ Começando com a Modelagem Física...
+### ⚙️ Parte 4 - Começando com a Modelagem Física...
 
 Agora sim estamos prontos para criar Tabelas (com chaves e campos) em um Sistema de Banco de Dados real. Utilizei o (https://sqliteonline.com/), um servidor online que atende a várias linguagens de dados, ideal para começar a entender esses conceitos, antes de se aprofundar de fato.
 
@@ -268,7 +268,7 @@ CREATE TABLE Atividades_Extras (
 ```
 
 
-## 📦 Inserindo os nossos dados...
+## 📦 Parte 5 - Inserindo os nossos dados...
 
 Oba! Chegamos na parte principal de nossa Modelagem (a inserção dos dados). Como já dito, nossos antigos atributos se tornarão campos para os dados serem colocados, comos alguns são derivados e outros não, começarei colocando todos os dados manualmente. E, no final, mostrarei um exemplo de como inserir os dados, de forma que os atributos derivados sejam calculados automaticamente. Vamos nessa?!
 
@@ -799,7 +799,38 @@ VALUES
 ```
 
 
-## 🛠️ Construído com
+## 🛠️ Parte 6 - Dando início as Operações CRUD:
+Você sabia que, mesmo após inserir os dados, ainda podemos personalizar como quisermos? Para isso que existe as Operações CRUD, com ela, podemos C - create (criar ou inserir), R - read (ler ou selecionar), U - update (atualizar) D - delete (deletar), quais dados quiser em seu Banco de Dados. Vamos conhecer essas operações melhor?
+
+Para usar o comando C - create, vamos inserir mais alguns dados em Atividades_extras:
+```sql
+INSERT INTO Atividades_Extras (ID_AtividadesExtras, ID_Local, ID_Apresentacao, Descricao_AtividadesExtras)
+VALUES
+(37, 6, 37, 'Esquenta Pop Pan com Camila Loures - 2024-05-30 23:00:00');
+```
+Mais essa atividade:
+```sql
+INSERT INTO Atividades_Extras (ID_AtividadesExtras, ID_Local, ID_Apresentacao, Descricao_AtividadesExtras)
+VALUES
+(38, 6, 38, 'Susana Vieira entrevistando fãs na fila - 2024-05-30 11:00:00');
+```
+E essa:
+```sql
+INSERT INTO Atividades_Extras (ID_AtividadesExtras, ID_Local, ID_Apresentacao, Descricao_AtividadesExtras)
+VALUES
+(39, 6, 39, 'Comentando comentários com Kefera - 2024-06-01 23:00:00');
+```
+
+Agora, vamos usar o R -read, para selecionar essa tabela, pra ver se deu tudo certo:
+```sql
+SELECT * FROM Atividades_Extras;
+```
+O resultado deve aparecer da seguinte forma:
+![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud_1_1.4.png)
+![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud_1_2.4.png)
+![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud_1_3.4.png)
+![1](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/crud_1_4.4.png)
+
 
 Mencione as ferramentas que você usou para criar seu projeto
 
