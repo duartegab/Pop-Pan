@@ -10,32 +10,32 @@ Para começarmos uma Modelagem de Banco de Dados, o primeiro passo é fazer o ce
 
 O Banco Pan está organizando um festival de música no Rio de Janeiro, chamado "Pop Pan". Os ingressos são vendidos online, no app do Banco e são validados na entrada do show pela equipe de segurança digital, para evitar fraudes. O sistema de banco de dados para o festival gerencia todas as edições do evento, incluindo artistas, agenda, locais, equipe, patrocinadores e setlists. A seguir, alguns detalhes e requisitos do sistema:
 
-####1. Edições do Festival:
+###1. Edições do Festival:
    
 • Cada edição possui um ID único, tema, data e hora de início, data e hora de término, criador da edição (com nome, telefone e email), duração da edição e patrocinadores.
   
-####2. Local:
+###2. Local:
    
 • Cada local possui um ID único, nome, endereço (com rua, número e bairro), CEP, equipe, ID da Edição e quantidade de pessoas estimadas.
   
-####3. Artistas:
+###3. Artistas:
  
 • Cada artista possui um ID único, nome, descrição, data de nascimento, detalhes da apresentação (como local, data e hora), idade, ID da Edição e redes sociais.
   
-####4. Apresentações:
+###4. Apresentações:
 
 • Cada apresentação possui um ID único, nome do artista, detalhes da apresentação (como nome do local, data e hora), apresentações por edição, ID da Edição e atividades extras.
   
-####5. Equipes:
+###5. Equipes:
 
 • Cada equipe possui um ID único, nome do membro, quantidade de membros, tarefas, ID da Edição e localização (composto por uma descrição, latitude, longitude).
 
-####6. Ingressos:
+###6. Ingressos:
 
 • Cada ingresso possui um ID único, nome do comprador, idade, data de nascimento, CPF, forma de pagamento, ID da Edição, contato (composto por telefone, email e conta no app do banco) e quais shows irá participar.
 
 
-####Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
+###Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 
 1. Cada edição é abrigada em um único local e cada local é abrigado para uma única edição.
 2. Um artista pode se apresentar em várias edições e uma edição pode apresentar vários artistas.
@@ -79,7 +79,7 @@ Agora sim estamos prontos para criar Tabelas (com chaves e campos) em um Sistema
 
 Vamos práticar?!
 
-#####Antes de tudo, vale lembrar que esses servidores onlines não te permitem a criação de um database. Então vamos direto as tabelas:
+###Antes de tudo, vale lembrar que esses servidores onlines não te permitem a criação de um database. Então vamos direto as tabelas:
 
 Seguindo nosso Modelo Lógico, vamos criar a tabela Edicoes:
 
