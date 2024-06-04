@@ -47,13 +47,11 @@ Para um melhor relacionamento entre esses fatores, seguem mais alguns detalhes:
 
 É tanta coisa, tanta informação né?! Mas relaxe, agora vamos começar a organizar tudo isso! =)
 
-### 📋 Pré-requisitos
+### 📋 Parte 2 - Criando nosso Modelagem Conceitual de Dados:
 
-De que coisas você precisa para instalar o software e como instalá-lo?
+Agora é a hora que pegamos todas essas informações, e convertemos em entidades, atributos e relacionamentos. Lembre-se das diferenças dos atributos (simples, composto, multivalorado, derivado e identificador) bem como os relacionamentos entre entidades (1 para 1, 1 para N e N para N), essas informações serão importantes mais tarde! 😉
 
-```
-Dar exemplos
-```
+![Media](https://github.com/duartegab/Pop-Pan)
 
 ### 🔧 Instalação
 
