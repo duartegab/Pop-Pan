@@ -960,7 +960,7 @@ O resultado deverá aparecer da seguinte forma:
 ![4.2](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%202.6.png)
 ![4.3](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%203.6.png)
 ![4.4](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%204.6.png)
-![4.5](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%205.5.png)
+![4.5](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%204.5.png)
 ![4.6](https://github.com/duartegab/Pop-Pan/blob/main/PrintsPopPan/consulta%204%206.6.png)
 
 
