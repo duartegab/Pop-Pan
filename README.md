@@ -740,7 +740,9 @@ VALUES
 (60, 31), (60, 35);
 ```
 
-Reparou que até agora inserimos somente dados manuais né? Em QtdShows_Ingressos, iremos fazer uma inserção de campos derivados de forma automática. Nela, temos um identificador sequencial gerado por ROW_NUMBER(), e os valores dos mesmos são agrupados por ID_Ingresso e ID_Apresentacao. Assim, a contagem de quantas vezes cada combinação aparece nas tabelas Ingresso, Apresentacao e Ingressos_Apresentacoes, assim como nessa, veja só:
+Reparou que até agora inserimos somente dados manuais né? Em QtdShows_Ingressos, iremos fazer uma inserção de campos derivados de forma automática. 
+Nela, temos um identificador sequencial gerado por ROW_NUMBER(), e os valores dos mesmos são agrupados por ID_Ingresso e ID_Apresentacao. 
+Assim, a contagem de quantas vezes cada combinação aparece nas tabelas Ingresso, Apresentacao e Ingressos_Apresentacoes, assim como nessa, veja só:
 ```sql
 INSERT INTO QtdShows_Ingressos (ID_QtdShows_Ingressos, ID_Ingresso, ID_Apresentacao, QtdShows_Ingressos)
 SELECT 
